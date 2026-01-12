@@ -59,7 +59,7 @@ const AdminView: React.FC = () => {
 
     setIsGeneratingAI(true);
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const ai = new GoogleGenAI({ apiKey:"AIzaSyA0xSEY7FMpO5VNpprU710_3a-1AXdSSBs" process.env.API_KEY });
       const response = await ai.models.generateContent({
         model: 'gemini-2.5-flash-image',
         contents: { 
